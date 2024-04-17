@@ -23,5 +23,6 @@ public class PlayerMovement : MonoBehaviour
         // Check if the player is moving and set the animator parameter
         bool isMoving = movement.magnitude > 0;
         animator.SetBool("isMoving", isMoving);
+        Debug.Log("isMoving: " + isMoving);
     }
 }
